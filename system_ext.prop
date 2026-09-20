@@ -46,7 +46,6 @@ persist.vendor.bluetooth.haltest=true
 ro.boot.wificountrycode=00
 ro.config.isolated_compilation_enabled=true
 ro.cp_system_other_odex=1
-ro.mot.security.enable=true
 ro.virtual_ab.merge_delay_seconds=300
 vendor.mm.en.sec.smoothstreaming=false
 vendor.mm.enable.qcom_parser=33554978

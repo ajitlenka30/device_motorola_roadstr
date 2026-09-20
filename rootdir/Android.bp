@@ -4,11 +4,6 @@
 //
 
 // Init scripts
-sh_binary {
-    name: "apanic_annotate.sh",
-    src: "bin/apanic_annotate.sh",
-    vendor: true,
-}
 
 sh_binary {
     name: "apanic_copy.sh",
@@ -29,18 +24,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "coresight_reset_source_sink.sh",
-    src: "bin/coresight_reset_source_sink.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "dcc_extension.sh",
-    src: "bin/dcc_extension.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "hardware_revisions.sh",
     src: "bin/hardware_revisions.sh",
     vendor: true,
@@ -55,12 +38,6 @@ sh_binary {
 sh_binary {
     name: "init.crda.sh",
     src: "bin/init.crda.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.gbmods.sh",
-    src: "bin/init.gbmods.sh",
     vendor: true,
 }
 
@@ -103,66 +80,6 @@ sh_binary {
 sh_binary {
     name: "init.kernel.post_boot-memory.sh",
     src: "bin/init.kernel.post_boot-memory.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot-sun.sh",
-    src: "bin/init.kernel.post_boot-sun.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot-sun_5_2.sh",
-    src: "bin/init.kernel.post_boot-sun_5_2.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot-sun_6_0.sh",
-    src: "bin/init.kernel.post_boot-sun_6_0.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot-sun_default_6_2.sh",
-    src: "bin/init.kernel.post_boot-sun_default_6_2.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot-tuna.sh",
-    src: "bin/init.kernel.post_boot-tuna.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot-tuna_1_3_2_1.sh",
-    src: "bin/init.kernel.post_boot-tuna_1_3_2_1.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot-tuna_2_2_2_1.sh",
-    src: "bin/init.kernel.post_boot-tuna_2_2_2_1.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot-tuna_2_3_1_1.sh",
-    src: "bin/init.kernel.post_boot-tuna_2_3_1_1.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot-tuna_2_3_2_0.sh",
-    src: "bin/init.kernel.post_boot-tuna_2_3_2_0.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot-tuna_default_2_3_2_1.sh",
-    src: "bin/init.kernel.post_boot-tuna_default_2_3_2_1.sh",
     vendor: true,
 }
 
@@ -257,20 +174,8 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qcom.coex.sh",
-    src: "bin/init.qcom.coex.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.qcom.early_boot.sh",
     src: "bin/init.qcom.early_boot.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qcom.efs.sync.sh",
-    src: "bin/init.qcom.efs.sync.sh",
     vendor: true,
 }
 
@@ -311,62 +216,8 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qti.kernel.debug-kera.sh",
-    src: "bin/init.qti.kernel.debug-kera.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qti.kernel.debug-sun.sh",
-    src: "bin/init.qti.kernel.debug-sun.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qti.kernel.debug-tuna.sh",
-    src: "bin/init.qti.kernel.debug-tuna.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qti.kernel.debug.sh",
-    src: "bin/init.qti.kernel.debug.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qti.kernel.early_debug-kera.sh",
-    src: "bin/init.qti.kernel.early_debug-kera.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qti.kernel.early_debug-sun.sh",
-    src: "bin/init.qti.kernel.early_debug-sun.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qti.kernel.early_debug-tuna.sh",
-    src: "bin/init.qti.kernel.early_debug-tuna.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qti.kernel.early_debug.sh",
-    src: "bin/init.qti.kernel.early_debug.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.qti.kernel.sh",
     src: "bin/init.qti.kernel.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qti.keymaster.sh",
-    src: "bin/init.qti.keymaster.sh",
     vendor: true,
 }
 
@@ -397,12 +248,6 @@ sh_binary {
 sh_binary {
     name: "pstore_annotate.sh",
     src: "bin/pstore_annotate.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "qca6234-service.sh",
-    src: "bin/qca6234-service.sh",
     vendor: true,
 }
 

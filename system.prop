@@ -115,7 +115,6 @@ ro.camera.default_app_social_media_parity_enabled=true
 ro.cp_system_other_odex=1
 ro.dalvik.vm.native.bridge=0
 ro.kernel.qemu.gles=0
-ro.launcher.blur.appLaunch=0
 ro.media.recorder-max-base-layer-fps=60
 ro.vendor.qti.va_aosp.support=1
 ro.vendor.use_data_netmgrd=true

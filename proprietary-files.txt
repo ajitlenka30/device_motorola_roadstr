@@ -34,7 +34,6 @@ vendor/lib64/com.dsi.ant@1.0.so
 
 # Alarm
 -system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar.fsv_meta
 system_ext/lib64/vendor.qti.hardware.alarm@1.0.so
 vendor/bin/hw/vendor.qti.hardware.alarm-service
 vendor/bin/hw/vendor.zuialarm.hardware.alarm-service
@@ -52,18 +51,16 @@ vendor/lib64/vendor.zuialarm.hardware.alarm-V1-ndk.so
 # Audio
 system_ext/etc/permissions/audiosphere.xml
 -system_ext/framework/audiosphere.jar
--system_ext/framework/audiosphere.jar.fsv_meta
 vendor/firmware/tfa98xx.cnt
 vendor/lib64/hw/libaudiocorehal.default.so
 vendor/lib64/hw/libaudiocorehal.qti.so
 vendor/lib64/hw/libaudioeffecthal.qti.so
-vendor/lib64/libaudioaidlcommon.so
 vendor/lib64/libaudiochargerlistener.so
 vendor/lib64/libaudioplatformconverter.qti.so
 vendor/lib64/libaudioroute.so
 vendor/lib64/libaudioserviceexampleimpl.so
 vendor/lib64/libaudioutils.so
-vendor/lib64/libaudio_aidl_conversion_common_ndk.so
+vendor/lib64/libaudio_aidl_conversion_common_ndk.so:vendor/lib64/libaudio_aidl_conversion_common_ndk_prebuilt.so;FIX_SONAME
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libtinycompress.so
 vendor/lib64/soundfx/libaudiopreprocessing.so
@@ -143,10 +140,6 @@ vendor/lib64/android.hardware.audio.common@5.0.so
 vendor/lib64/android.hardware.audio.common@7.0-enums.so
 vendor/lib64/android.hardware.audio.common@7.0-util.so
 vendor/lib64/android.hardware.audio.common@7.0.so
-vendor/lib64/android.hardware.audio.core-V2-ndk.so
-vendor/lib64/android.hardware.audio.core.sounddose-V1-ndk.so
-vendor/lib64/android.hardware.audio.core.sounddose-V2-ndk.so
-vendor/lib64/android.hardware.audio.effect-V2-ndk.so
 vendor/lib64/android.hardware.audio.effect@7.0-util.so
 vendor/lib64/android.hardware.audio.effect@7.0.so
 vendor/lib64/android.hardware.audio@7.0-util.so
@@ -154,7 +147,6 @@ vendor/lib64/android.hardware.audio@7.0.so
 vendor/lib64/hw/android.hardware.audio.effect@7.0-impl.so
 vendor/lib64/hw/android.hardware.audio@7.0-impl.so
 vendor/lib64/hw/audio.primary.default.so
-vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/hw/audio/libQnnSystem.so
 vendor/lib64/libqc2audio_hwaudiocodec.so
@@ -176,9 +168,8 @@ vendor/etc/init/android.hardware.bluetooth@aidl-service-qti.rc
 -vendor/etc/vintf/manifest/bluetooth_hci.xml
 -vendor/etc/vintf/manifest/bluetooth_sar.xml
 vendor/lib64/android.hardware.bluetooth-V1-ndk.so
-vendor/lib64/android.hardware.bluetooth.audio-impl.so
+vendor/lib64/android.hardware.bluetooth.audio-impl.so:vendor/lib64/android.hardware.bluetooth.audio-impl_prebuilt.so;FIX_SONAME
 vendor/lib64/android.hardware.bluetooth.audio-V3-ndk.so
-vendor/lib64/android.hardware.bluetooth.audio-V4-ndk.so
 vendor/lib64/android.hardware.bluetooth.audio@2.0.so
 vendor/lib64/android.hardware.bluetooth.audio@2.1.so
 vendor/lib64/android.hardware.bluetooth.finder-V1-ndk.so
@@ -190,14 +181,13 @@ vendor/lib64/hw/android.hardware.bluetooth.audio_sw.so
 vendor/lib64/hw/android.hardware.bluetooth.lmp_event-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth@aidl-impl-qti.so
-vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth.finder-impl-qti.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@aidl-impl.so
 vendor/lib64/libbluetooth_audio_session.so
-vendor/lib64/libbluetooth_audio_session_aidl.so
+vendor/lib64/libbluetooth_audio_session_aidl.so:vendor/lib64/libbluetooth_audio_session_aidl_prebuilt.so;FIX_SONAME
 vendor/lib64/libbluetooth_audio_session_aidl_qti.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so
@@ -223,118 +213,64 @@ vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
 # CNE
--framework/vendor.qti.hardware.data.connectionaidl-V1-java.jar
--framework/vendor.qti.hardware.data.connectionaidl-V1-java.jar.fsv_meta
-lib64/vendor.qti.hardware.data.connectionaidl-V1-ndk.so
+-system/framework/vendor.qti.hardware.data.connectionaidl-V1-java.jar
+system/lib64/vendor.qti.hardware.data.connectionaidl-V1-ndk.so
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
 product/etc/permissions/vendor.qti.hardware.data.connectionaidl-V1-java.xml
 -system_ext/framework/com.quicinc.cne.api-V1.0-java.jar
--system_ext/framework/com.quicinc.cne.api-V1.0-java.jar.fsv_meta
 -system_ext/framework/com.quicinc.cne.api-V1.1-java.jar
--system_ext/framework/com.quicinc.cne.api-V1.1-java.jar.fsv_meta
 -system_ext/framework/com.quicinc.cne.constants-V1.0-java.jar
--system_ext/framework/com.quicinc.cne.constants-V1.0-java.jar.fsv_meta
 -system_ext/framework/com.quicinc.cne.constants-V2.0-java.jar
--system_ext/framework/com.quicinc.cne.constants-V2.0-java.jar.fsv_meta
 -system_ext/framework/com.quicinc.cne.constants-V2.1-java.jar
--system_ext/framework/com.quicinc.cne.constants-V2.1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.dmapconsent-V1-java.jar
--system_ext/framework/vendor.qti.data.dmapconsent-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.dmapconsent-V2-java.jar
--system_ext/framework/vendor.qti.data.dmapconsent-V2-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.factory-V1.0-java.jar
--system_ext/framework/vendor.qti.data.factory-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.factory-V2.0-java.jar
--system_ext/framework/vendor.qti.data.factory-V2.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.factory-V2.1-java.jar
--system_ext/framework/vendor.qti.data.factory-V2.1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.factory-V2.2-java.jar
--system_ext/framework/vendor.qti.data.factory-V2.2-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.factory-V2.3-java.jar
--system_ext/framework/vendor.qti.data.factory-V2.3-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.factory-V2.4-java.jar
--system_ext/framework/vendor.qti.data.factory-V2.4-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.factory-V2.5-java.jar
--system_ext/framework/vendor.qti.data.factory-V2.5-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.factory-V2.6-java.jar
--system_ext/framework/vendor.qti.data.factory-V2.6-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.factory-V2.7-java.jar
--system_ext/framework/vendor.qti.data.factory-V2.7-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.factory-V2.8-java.jar
--system_ext/framework/vendor.qti.data.factory-V2.8-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.factoryservice-V1-java.jar
--system_ext/framework/vendor.qti.data.factoryservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.factoryservice-V2-java.jar
--system_ext/framework/vendor.qti.data.factoryservice-V2-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.factoryservice-V3-java.jar
--system_ext/framework/vendor.qti.data.factoryservice-V3-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.mwqem-V1.0-java.jar
--system_ext/framework/vendor.qti.data.mwqem-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.mwqemaidlservice-V1-java.jar
--system_ext/framework/vendor.qti.data.mwqemaidlservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.ntn-V1-java.jar
--system_ext/framework/vendor.qti.data.ntn-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.data.slm-V1.0-java.jar
--system_ext/framework/vendor.qti.data.slm-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.1-java.jar
--system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.2-java.jar
--system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.2-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.3-java.jar
--system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.3-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.cneaidlservice.internal.api-V1-java.jar
--system_ext/framework/vendor.qti.hardware.data.cneaidlservice.internal.api-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.cneaidlservice.internal.api-V2-java.jar
--system_ext/framework/vendor.qti.hardware.data.cneaidlservice.internal.api-V2-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-java.jar
--system_ext/framework/vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.cneaidlservice.internal.server-V1-java.jar
--system_ext/framework/vendor.qti.hardware.data.cneaidlservice.internal.server-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.cneaidlservice.internal.server-V2-java.jar
--system_ext/framework/vendor.qti.hardware.data.cneaidlservice.internal.server-V2-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.connection-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.data.connection-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.connection-V1.1-java.jar
--system_ext/framework/vendor.qti.hardware.data.connection-V1.1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.connectionfactory-V1-java.jar
--system_ext/framework/vendor.qti.hardware.data.connectionfactory-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.dataactivity-V1-java.jar
--system_ext/framework/vendor.qti.hardware.data.dataactivity-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.1-java.jar
--system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.dynamicddsaidlservice-V1-java.jar
--system_ext/framework/vendor.qti.hardware.data.dynamicddsaidlservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.flow-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.data.flow-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.flow-V1.1-java.jar
--system_ext/framework/vendor.qti.hardware.data.flow-V1.1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.flowaidlservice-V1-java.jar
--system_ext/framework/vendor.qti.hardware.data.flowaidlservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.iwlan-V1.1-java.jar
--system_ext/framework/vendor.qti.hardware.data.iwlan-V1.1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.iwlandata-V1-java.jar
--system_ext/framework/vendor.qti.hardware.data.iwlandata-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.ka-V1-java.jar
--system_ext/framework/vendor.qti.hardware.data.ka-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.lce-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.data.lce-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.lceaidlservice-V1-java.jar
--system_ext/framework/vendor.qti.hardware.data.lceaidlservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.data.qmiaidlservice-V1-java.jar
--system_ext/framework/vendor.qti.hardware.data.qmiaidlservice-V1-java.jar.fsv_meta
 system_ext/lib64/com.quicinc.cne.api@1.0.so
 system_ext/lib64/com.quicinc.cne.api@1.1.so
 system_ext/lib64/com.quicinc.cne.constants@1.0.so
@@ -689,7 +625,7 @@ vendor/bin/hw/vendor.qti.camera.provider-service_64
 # Camera-configs
 vendor/etc/camera/arcsoft_calibration_u_dc.bin
 vendor/etc/camera/mot_engine_config.bin
-vendor/etc/camera/vidhance.lic
+-vendor/etc/camera/vidhance.lic
 vendor/etc/camera/vidhance_calibration
 
 # Camera-firmware
@@ -805,7 +741,6 @@ vendor/lib64/libmmcamera_pdpc.so
 
 # Configstore
 -system_ext/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar.fsv_meta
 system_ext/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore-service
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore-service.rc
@@ -814,17 +749,14 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore-impl.so
 vendor/lib64/vendor.qti.hardware.capabilityconfigstore-V1-ndk.so
 
 # DPM
--framework/tcmclient.jar
--framework/tcmclient.jar.fsv_meta
+-system/framework/tcmclient.jar
 system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/dpmd.rc
 system_ext/etc/permissions/com.qti.dpmframework.xml
 system_ext/etc/permissions/dpmapi.xml
 -system_ext/framework/com.qti.dpmframework.jar
--system_ext/framework/com.qti.dpmframework.jar.fsv_meta
 -system_ext/framework/dpmapi.jar
--system_ext/framework/dpmapi.jar.fsv_meta
 system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
 system_ext/lib64/libdpmctmgr.so
 system_ext/lib64/libdpmfdmgr.so
@@ -864,10 +796,7 @@ vendor/lib64/libhdcpsrm.so
 vendor/lib64/libmm-hdcpmgr.so
 
 # DRM-Hardware
-vendor/bin/hw/android.hardware.drm-service.clearkey
-vendor/etc/init/android.hardware.drm-service.clearkey.rc
 vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
--vendor/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml
 -vendor/etc/vintf/manifest/android.hardware.drm-service.xml
 vendor/lib64/android.hardware.drm-V1-ndk.so
 
@@ -875,7 +804,6 @@ vendor/lib64/android.hardware.drm-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # DRM-Widevine
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 
 # Display-Hardware
 system_ext/lib64/vendor.display.config@1.0.so
@@ -1124,12 +1052,16 @@ system_ext/etc/permissions/com.qti.location.sdk.xml
 system_ext/etc/permissions/com.qualcomm.location.xml
 system_ext/etc/permissions/privapp-permissions-com.qualcomm.location.xml
 -system_ext/framework/com.qti.location.sdk.jar
--system_ext/framework/com.qti.location.sdk.jar.fsv_meta
 vendor/bin/hw/android.hardware.gnss-aidl-service-qti
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/xtra-daemon
+vendor/etc/gps.conf
 vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc
+vendor/etc/izat.conf
+vendor/etc/lowi.conf
+vendor/etc/sap.conf
+vendor/etc/xtwifi.conf
 -vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml
 -vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
 vendor/lib64/android.hardware.gnss-V4-ndk.so
@@ -1201,15 +1133,12 @@ vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libtinyxml2_1.so
 
 # Health
-vendor/bin/hw/android.hardware.health-service.qti
 vendor/bin/hw/motorola.hardware.health-service
 vendor/bin/hw/motorola.hardware.health.storage-service
 vendor/bin/hw/motorola.hardware.health.storage@1.0-service
-vendor/etc/init/android.hardware.health-service.qti.rc
 vendor/etc/init/motorola.hardware.health.service.rc
 vendor/etc/init/motorola.hardware.health.storage.service.rc
 vendor/etc/init/motorola.hardware.health.storage@1.0-service.rc
--vendor/etc/vintf/manifest/android.hardware.health-service.qti.xml
 -vendor/etc/vintf/manifest/motorola.hardware.health.service.xml
 -vendor/etc/vintf/manifest/motorola.hardware.health.storage.service.xml
 vendor/lib64/android.hardware.health-V1-ndk.so
@@ -1226,7 +1155,6 @@ vendor/lib64/motorola.hardware.health.storage@1.0.so
 -product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar
--system_ext/framework/com.android.hotwordenrollment.common.util.jar.fsv_meta
 
 # IFAA
 vendor/bin/hw/com.motorola.hardware.ifaa-V1-service
@@ -1263,15 +1191,10 @@ vendor/odm/etc/permissions/sku_nes/android.hardware.strongbox_keystore.xml
 
 # Latency
 -system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.latency-V2.0-java.jar
--system_ext/framework/vendor.qti.latency-V2.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.latency-V2.1-java.jar
--system_ext/framework/vendor.qti.latency-V2.1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.latency-V2.2-java.jar
--system_ext/framework/vendor.qti.latency-V2.2-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.latencyaidlservice-V1-java.jar
--system_ext/framework/vendor.qti.latencyaidlservice-V1-java.jar.fsv_meta
 system_ext/lib64/vendor.qti.hardware.data.latency@1.0.so
 system_ext/lib64/vendor.qti.latency@2.0.so
 system_ext/lib64/vendor.qti.latency@2.1.so
@@ -1291,7 +1214,6 @@ vendor/etc/init/vendor.qti.hardware.lights.service.rc
 vendor/lib64/android.hardware.light-V2-ndk.so
 
 # Listen
-vendor/lib64/android.hardware.soundtrigger3-V1-ndk.so
 vendor/lib64/android.hardware.soundtrigger@2.0-core.so
 vendor/lib64/android.hardware.soundtrigger@2.0.so
 vendor/lib64/android.hardware.soundtrigger@2.1.so
@@ -1400,7 +1322,6 @@ vendor/lib64/motorola.hardware.wireless.wlc-V1-ndk.so
 # NFC
 system_ext/etc/permissions/com.nxp.nfc.xml
 -system_ext/framework/com.nxp.nfc.jar
--system_ext/framework/com.nxp.nfc.jar.fsv_meta
 vendor/bin/hw/android.hardware.nfc-service-st
 vendor/bin/hw/android.hardware.nqnfc-service.nxp
 vendor/bin/hw/android.hardware.secure_element-service.qti
@@ -1570,17 +1491,29 @@ vendor/lib64/libqmi_legacy.so
 # Qdutils
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
+# Overlays
+vendor/overlay/MotoFrameworkResOverlayHWDualSim.apk
+vendor/overlay/MotoFrameworkResOverlayVendorCommon.apk
+vendor/overlay/MotoFrameworkResOverlayWFD.apk
+vendor/overlay/MotoFrameworkResOverlayWlc.apk
+vendor/overlay/SecureElementResTarget_Vendor.apk
+vendor/overlay/SettingsProvider__roadstr__auto_generated_rro_vendor.apk
+vendor/overlay/StSecureElementWithouteSEResOverlay.apk
+vendor/overlay/SystemUI__roadstr__auto_generated_rro_vendor.apk
+vendor/overlay/WifiRes6GhzEnable.apk
+vendor/overlay/WifiResDualStaEnablePRC.apk
+vendor/overlay/WifiResDualStaEnableROW.apk
+vendor/overlay/framework-res__roadstr__auto_generated_rro_vendor.apk
+
 # Radio
-etc/permissions/privapp-permissions-qti.xml
-etc/sysconfig/qti_whitelist.xml
+system/etc/permissions/privapp-permissions-qti.xml
+system/etc/sysconfig/qti_whitelist.xml
 -product/framework/vendor.qti.hardware.radio.qtiradio-V1-java.jar
 product/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
 product/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
 system_ext/etc/permissions/qcrilhook.xml
 -system_ext/framework/qcrilhook.jar
--system_ext/framework/qcrilhook.jar.fsv_meta
 -system_ext/framework/qti-telephony-common.jar
--system_ext/framework/qti-telephony-common.jar.fsv_meta
 system_ext/lib64/vendor.qti.hardware.radio.am@1.0.so
 system_ext/lib64/vendor.qti.hardware.radio.lpa@1.0.so
 system_ext/lib64/vendor.qti.hardware.radio.lpa@1.1.so
@@ -1688,85 +1621,45 @@ system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
 -system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
--system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar.fsv_meta
 -system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
--system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar.fsv_meta
 -system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar
--system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar.fsv_meta
 -system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar
--system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar.fsv_meta
 -system_ext/framework/com.qualcomm.qti.uceservice-V2.1-java.jar
--system_ext/framework/com.qualcomm.qti.uceservice-V2.1-java.jar.fsv_meta
 -system_ext/framework/com.qualcomm.qti.uceservice-V2.2-java.jar
--system_ext/framework/com.qualcomm.qti.uceservice-V2.2-java.jar.fsv_meta
 -system_ext/framework/com.qualcomm.qti.uceservice-V2.3-java.jar
--system_ext/framework/com.qualcomm.qti.uceservice-V2.3-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar
--system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.callcapabilityaidlservice-V1-java.jar
--system_ext/framework/vendor.qti.ims.callcapabilityaidlservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar
--system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.configaidlservice-V1-java.jar
--system_ext/framework/vendor.qti.ims.configaidlservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.configservice-V1.0-java.jar
--system_ext/framework/vendor.qti.ims.configservice-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.configservice-V1.1-java.jar
--system_ext/framework/vendor.qti.ims.configservice-V1.1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
--system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar
--system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.datachannelservice-V1-java.jar
--system_ext/framework/vendor.qti.ims.datachannelservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.datachannelservice-V2-java.jar
--system_ext/framework/vendor.qti.ims.datachannelservice-V2-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.datachannelservice-V3-java.jar
--system_ext/framework/vendor.qti.ims.datachannelservice-V3-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
--system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
--system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
--system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar
--system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar
--system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar
--system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.imscmaidlservice-V1-java.jar
--system_ext/framework/vendor.qti.ims.imscmaidlservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
--system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar
--system_ext/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.rcsconfig-V2.0-java.jar
--system_ext/framework/vendor.qti.ims.rcsconfig-V2.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.rcsconfig-V2.1-java.jar
--system_ext/framework/vendor.qti.ims.rcsconfig-V2.1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar
--system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar
--system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar
--system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar
--system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar
--system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar
--system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar
--system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar
--system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.ims.uceaidlservice-V1-java.jar
--system_ext/framework/vendor.qti.ims.uceaidlservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.imsdatachannel.jar
--system_ext/framework/vendor.qti.imsdatachannel.jar.fsv_meta
 -system_ext/framework/vendor.qti.ImsVtService-java.jar
--system_ext/framework/vendor.qti.ImsVtService-java.jar.fsv_meta
 system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so
 system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so
 system_ext/lib64/com.qualcomm.qti.imscmservice@2.2.so
@@ -1895,6 +1788,37 @@ vendor/bin/ssr_setup
 vendor/bin/subsystem_ramdump
 vendor/lib64/libsubsystem_control.so
 
+# Seccomp
+vendor/etc/seccomp_policy/atfwd@2.0.policy
+vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy
+vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy
+vendor/etc/seccomp_policy/c2audio.vendor.ext-arm.policy
+vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy
+vendor/etc/seccomp_policy/c2pa_network.policy
+vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy
+vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy
+vendor/etc/seccomp_policy/gnss@2.0-base.policy
+vendor/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy
+vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy
+vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy
+vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
+vendor/etc/seccomp_policy/imsrtp.policy
+vendor/etc/seccomp_policy/qcrilnr@2.0.policy
+vendor/etc/seccomp_policy/qesdk.policy
+vendor/etc/seccomp_policy/qesdksec.policy
+vendor/etc/seccomp_policy/qms.policy
+vendor/etc/seccomp_policy/qsap_dcfd.policy
+vendor/etc/seccomp_policy/qsap_qapeservice.policy
+vendor/etc/seccomp_policy/qsap_sensors.policy
+vendor/etc/seccomp_policy/qsap_voiceui.policy
+vendor/etc/seccomp_policy/qspm.policy
+vendor/etc/seccomp_policy/qti-systemd.policy
+vendor/etc/seccomp_policy/qwesd@2.0.policy
+vendor/etc/seccomp_policy/syshealthmon.policy
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
+vendor/etc/seccomp_policy/wfdhdcphalservice.policy
+vendor/etc/seccomp_policy/wfdvndservice.policy
+
 # Sensor-calibrate
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate-service
 vendor/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc
@@ -1995,7 +1919,6 @@ vendor/etc/sensors/sns_reg_config
 
 # Sensors
 -system_ext/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar.fsv_meta
 vendor/bin/hw/android.hardware.sensors-service.multihal
 vendor/bin/sensors.qti
 vendor/etc/init/android.hardware.sensors-service-multihal.rc
@@ -2024,10 +1947,8 @@ vendor/lib64/libsotertool.so
 vendor/lib64/vendor.qti.hardware.soter-V1-ndk.so
 
 # Thermal
-vendor/bin/hw/android.hardware.thermal-service.qti
 vendor/bin/thermal-engine-v2
 vendor/etc/display/thermallevel_to_fps.xml
-vendor/etc/init/android.hardware.thermal-service.qti.rc
 vendor/etc/init/init_thermal-engine-v2.rc
 vendor/etc/thermal-engine-roadstr-aifastc.conf
 vendor/etc/thermal-engine-roadstr-auto.conf
@@ -2039,7 +1960,6 @@ vendor/etc/thermal-engine-roadstr-gb.conf
 vendor/etc/thermal-engine-roadstr-perf.conf
 vendor/etc/thermal-engine-roadstr.conf
 vendor/etc/thermal-engine.conf
--vendor/etc/vintf/manifest/android.hardware.thermal-service.qti.xml
 vendor/lib64/android.hardware.thermal-V1-ndk.so
 vendor/lib64/android.hardware.thermal-V2-ndk.so
 vendor/lib64/android.hardware.thermal@1.0.so
@@ -2056,10 +1976,6 @@ vendor/lib64/libtime_genoff.so
 vendor/lib64/libstreamparser.so
 
 # Vibrator
-vendor/bin/hw/vendor.qti.hardware.vibrator.service
-vendor/etc/init/vendor.qti.hardware.vibrator.service.rc
--vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml
-vendor/lib64/android.hardware.vibrator-V2-ndk.so
 vendor/lib64/hw/vibrator.default.so
 vendor/lib64/libqtivibratoreffect.so
 vendor/lib64/libqtivibratoreffectoffload.so
@@ -2072,12 +1988,12 @@ vendor/lib64/vendor.qti.hardware.vibratorOL.impl.so
 vendor/lib64/vendor.qti.hardware.vibratorSel.impl.so
 
 # WFD
--framework/WfdCommon.jar
--framework/WfdCommon.jar.fsv_meta
+-system/framework/WfdCommon.jar
 system_ext/bin/wfdservice64
 system_ext/etc/init/wfdservice.rc
 -system_ext/etc/vintf/manifest/vendor.qti.hardware.sigma_miracast.xml
--system_ext/etc/vintf/manifest/vendor.qti.hardware.sigma_miracast_aidl.xml
+system_ext/etc/vintf/manifest/vendor.qti.hardware.sigma_miracast_aidl.xml
+system_ext/etc/vintf/manifest/vendor.qti.qccsyshal_aidl-service.xml
 system_ext/etc/wfdconfigsink.xml
 system_ext/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so
 system_ext/lib64/libwfdavenhancements.so
@@ -2138,11 +2054,11 @@ vendor/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so
 # WiFi
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
-vendor/bin/hw/android.hardware.wifi-service
-vendor/etc/init/android.hardware.wifi-service.rc
+vendor/bin/hw/hostapd
+vendor/bin/hw/wpa_supplicant
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
+vendor/etc/init/hostapd.android.rc
 vendor/etc/init/vendor.qti.hardware.wifi.wifilearner-service.rc
--vendor/etc/vintf/manifest/android.hardware.wifi-service.xml
 -vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
 -vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
 -vendor/etc/vintf/manifest/vendor.qti.hardware.wifi.wifilearner-service.xml
@@ -2150,6 +2066,7 @@ vendor/lib64/android.hardware.wifi-V2-ndk.so
 vendor/lib64/android.hardware.wifi.common-V1-ndk.so
 vendor/lib64/android.hardware.wifi.hostapd-V2-ndk.so
 vendor/lib64/android.hardware.wifi.supplicant-V3-ndk.so
+vendor/lib64/libwifi-hal.so
 vendor/lib64/vendor.qti.hardware.wifi.supplicant-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.wifi.wifilearner-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
@@ -2530,45 +2447,25 @@ system_ext/etc/sysconfig/whitelist_com.motorola.rcsConfigService.xml
 system_ext/etc/sysconfig/whitelist_com.qualcomm.qti.uceShimService.xml
 system_ext/etc/wmshell.protolog.pb
 -system_ext/framework/ActivityExt.jar
--system_ext/framework/ActivityExt.jar.fsv_meta
 -system_ext/framework/androidx.window.extensions.jar
--system_ext/framework/androidx.window.extensions.jar.fsv_meta
 -system_ext/framework/androidx.window.sidecar.jar
--system_ext/framework/androidx.window.sidecar.jar.fsv_meta
 -system_ext/framework/datachannellib.jar
--system_ext/framework/datachannellib.jar.fsv_meta
 -system_ext/framework/extphonelib.jar
--system_ext/framework/extphonelib.jar.fsv_meta
 -system_ext/framework/payjoy-api.jar
--system_ext/framework/payjoy-api.jar.fsv_meta
 -system_ext/framework/qcom-moto-ims-ext.jar
--system_ext/framework/qcom-moto-ims-ext.jar.fsv_meta
 -system_ext/framework/qcom-moto-telephony-ext.jar
--system_ext/framework/qcom-moto-telephony-ext.jar.fsv_meta
 -system_ext/framework/qmapbridge.jar
--system_ext/framework/qmapbridge.jar.fsv_meta
 -system_ext/framework/qti-telephony-hidl-wrapper.jar
--system_ext/framework/qti-telephony-hidl-wrapper.jar.fsv_meta
 -system_ext/framework/qti-telephony-utils.jar
--system_ext/framework/qti-telephony-utils.jar.fsv_meta
 -system_ext/framework/SatelliteClient.jar
--system_ext/framework/SatelliteClient.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.c2pa-V1-java.jar
--system_ext/framework/vendor.qti.hardware.c2pa-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.cacertaidlservice-V1-java.jar
--system_ext/framework/vendor.qti.hardware.cacertaidlservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.dpmaidlservice-V1-java.jar
--system_ext/framework/vendor.qti.hardware.dpmaidlservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.dpmservice-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.dpmservice-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.dpmservice-V1.1-java.jar
--system_ext/framework/vendor.qti.hardware.dpmservice-V1.1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.mwqemadapter-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.mwqemadapter-V1.0-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.mwqemadapteraidlservice-V1-java.jar
--system_ext/framework/vendor.qti.hardware.mwqemadapteraidlservice-V1-java.jar.fsv_meta
 -system_ext/framework/vendor.qti.hardware.slmadapter-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.slmadapter-V1.0-java.jar.fsv_meta
 system_ext/lib64/extractors/libmmparserextractor.so
 system_ext/lib64/libAdaptiveEQ_recpp.so
 system_ext/lib64/libAGC_recpp.so
@@ -2856,11 +2753,9 @@ vendor/bin/GPTEE_Sample_client
 vendor/bin/hal_proxy_daemon
 vendor/bin/hexlpservice
 vendor/bin/hlosminkdaemon
-vendor/bin/hw/android.hardware.boot-service.qti
 vendor/bin/hw/android.hardware.identity-service-qti
 vendor/bin/hw/android.hardware.security.keymint-service-qti
 vendor/bin/hw/android.hardware.security.keymint-service.strongbox-thales
-vendor/bin/hw/android.hardware.usb-service.qti
 vendor/bin/hw/android.hardware.uwb@service-qti
 vendor/bin/hw/android.hardware.weaver-service.thales
 vendor/bin/hw/audiohalservice.qti
@@ -2872,6 +2767,7 @@ vendor/bin/hw/vendor.qti.hardware.minkipcbinder@1.0-service
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/hw/vendor.qti.hardware.secureprocessor
 vendor/bin/hw/vendor.qti.hardware.servicetrackeraidl-service
+vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/hw/vendor.qti.media.c2audio@1.0-service
 vendor/bin/hw/vendor.qti.MemHal-service
 vendor/bin/hw/vendor.qti.psiclient@1.0-service
@@ -2949,7 +2845,6 @@ vendor/bin/ubwcconvert
 vendor/bin/ubwcp_test64
 vendor/bin/utag_spy
 vendor/bin/vendor.dpmd
-vendor/bin/vendor.qti.qspa-service
 vendor/bin/vendor.qti.qspmhal-service
 vendor/bin/vendor.qti.syshealthmon-service
 vendor/bin/vendor_cmd_tool
@@ -3103,7 +2998,6 @@ vendor/etc/eva/facelandmark/weight_2.dat
 vendor/etc/eva/facelandmark/weight_3_1.dat
 vendor/etc/eva/facelandmark/weight_3_2.dat
 vendor/etc/eva/itof/tuning_params_sensor_type_1.json
-vendor/etc/excluded-input-devices.xml
 vendor/etc/gnss_antenna_info.conf
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/hal_uuid_map_config.xml
@@ -3118,11 +3012,9 @@ vendor/etc/hostapd/hostapd.accept
 vendor/etc/hostapd/hostapd.deny
 vendor/etc/hostapd/hostapd_default.conf
 vendor/etc/init.qti.fm.sh
-vendor/etc/init/android.hardware.boot-service.qti.rc
 vendor/etc/init/android.hardware.identity-service-qti.rc
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc
 vendor/etc/init/android.hardware.security.keymint-service.strongbox-thales.rc
-vendor/etc/init/android.hardware.usb-service.qti.rc
 vendor/etc/init/android.hardware.uwbhal-qti.rc
 vendor/etc/init/android.hardware.weaver-service.thales.rc
 vendor/etc/init/audiohalservice_qti.rc
@@ -3143,6 +3035,7 @@ vendor/etc/init/init.embmssl_server.rc
 vendor/etc/init/init.qccvendor.rc
 vendor/etc/init/init.qt-service.rc
 vendor/etc/init/init.qti.display_boot.rc
+vendor/etc/init/init.qti.fm.rc
 vendor/etc/init/init.qti.media.rc
 vendor/etc/init/init.qti.qcv.rc
 vendor/etc/init/init.time_daemon.rc
@@ -3150,7 +3043,6 @@ vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/init.vendor.wlan.rc
 vendor/etc/init/init_fan_service.rc
 vendor/etc/init/ipacm-diag.rc
-vendor/etc/init/ipacm.rc
 vendor/etc/init/loc-launcher.rc
 vendor/etc/init/memtrack_qti.rc
 vendor/etc/init/motosxf.rc
@@ -3167,7 +3059,6 @@ vendor/etc/init/qmipriod.debug.rc
 vendor/etc/init/qmipriod.rc
 vendor/etc/init/qms.rc
 vendor/etc/init/qseecomd.rc
-vendor/etc/init/qspa_vendor.rc
 vendor/etc/init/qttestservice.rc
 vendor/etc/init/qwesd.rc
 vendor/etc/init/shsusrd.rc
@@ -3189,10 +3080,10 @@ vendor/etc/init/vendor.qti.hardware.minkipcbinder@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.secureprocessor.rc
 vendor/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc
+vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
 vendor/etc/init/vendor.qti.MemHal-service.rc
 vendor/etc/init/vendor.qti.psiclient@1.0-service.rc
-vendor/etc/init/vendor.qti.qspa-service.rc
 vendor/etc/init/vendor.qti.qspmhal-service.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.smp2p.rc
@@ -3204,7 +3095,6 @@ vendor/etc/init/vendor.tsa.hdcp-IHDCPInterface.rc
 vendor/etc/init/vmmgr.rc
 vendor/etc/init/vppservice.rc
 vendor/etc/init/wfdvndservice.rc
-vendor/etc/IPACM_Filter_cfg.xml
 vendor/etc/libse-gto-hal.conf
 vendor/etc/linker.config.pb
 vendor/etc/lm/AppClassifierFeature.xml
@@ -3313,6 +3203,8 @@ vendor/etc/qguard.json
 vendor/etc/qms_log_config
 vendor/etc/qspa/nav_disabled.rc
 vendor/etc/qspa/nsp_disabled.rc
+vendor/etc/vintf/manifest/qspa/qspa-modem.xml
+vendor/etc/vintf/manifest/qspa/qspa-nav.xml
 vendor/etc/qvaconfig_v4.xml
 vendor/etc/qvirtmgr-vndr.json
 vendor/etc/res/images/default/charger/battery_fail.png
@@ -3354,9 +3246,6 @@ vendor/lib64/android.frameworks.cameraservice.device-V2-ndk.so
 vendor/lib64/android.frameworks.cameraservice.service-V2-ndk.so
 vendor/lib64/android.frameworks.location.altitude-V2-ndk.so
 vendor/lib64/android.frameworks.sensorservice-V1-ndk.so
-vendor/lib64/android.hardware.boot-V1-ndk.so
-vendor/lib64/android.hardware.boot@1.0.so
-vendor/lib64/android.hardware.boot@1.1.so
 vendor/lib64/android.hardware.common-V2-ndk.so
 vendor/lib64/android.hardware.common.fmq-V1-ndk.so
 vendor/lib64/android.hardware.identity-V5-ndk.so
@@ -3386,7 +3275,6 @@ vendor/lib64/android.hidl.safe_union@1.0.so
 vendor/lib64/android.hidl.token@1.0-utils.so
 vendor/lib64/android.hidl.token@1.0.so
 vendor/lib64/android.media.audio.common.types-V2-ndk.so
-vendor/lib64/android.media.audio.common.types-V3-ndk.so
 vendor/lib64/android.media.soundtrigger.types-V1-ndk.so
 vendor/lib64/android.se.omapi-V1-ndk.so
 vendor/lib64/android.system.net.netd-V1-ndk.so
@@ -3632,7 +3520,6 @@ vendor/lib64/libagm_mixer_plugin.so
 vendor/lib64/libagm_pcm_plugin.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libaidenoiserv2.so
-vendor/lib64/libalsautilsv2.so
 vendor/lib64/libandroid_runtime_lazy.so
 vendor/lib64/libaodoptfeature.so
 vendor/lib64/libapengine.so
@@ -3659,7 +3546,6 @@ vendor/lib64/libbinderdebug.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libblas.so
-vendor/lib64/libboot_control_qti.so
 vendor/lib64/libBSTHDRDETECT.so
 vendor/lib64/libBSTMultiExpoGainHDR.so
 vendor/lib64/libBSTNodeUtils.so
@@ -3799,10 +3685,8 @@ vendor/lib64/libmcs.so
 vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmdmcutback.so
 vendor/lib64/libmdpfmgr.so
-vendor/lib64/libmediautils_vendor.so
 vendor/lib64/libmedia_helper.so
 vendor/lib64/libmemperfd.so
-vendor/lib64/libmemunreachable.so
 vendor/lib64/libmemutils.so
 vendor/lib64/libmfec.so
 vendor/lib64/libmfGhostDetection.so
@@ -4061,7 +3945,6 @@ vendor/lib64/libVoiceSdk.so
 vendor/lib64/libvui_dmgr.so
 vendor/lib64/libvui_dmgr_client.so
 vendor/lib64/libvui_intf.so
-vendor/lib64/libwifi-hal-ctrl.so
 vendor/lib64/libwifi-system-iface.so
 vendor/lib64/libwifiobserver.so
 vendor/lib64/libWlanServiceJni.so
@@ -4111,7 +3994,6 @@ vendor/lib64/qsn1rtlp430.bin
 vendor/lib64/qsn1rtlp43270.bin
 vendor/lib64/qsn2all.bin
 vendor/lib64/qsn3all.bin
-vendor/lib64/qti-audio-types-aidl-V1-ndk.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
 vendor/lib64/qtiPeripheralMgr.so
 vendor/lib64/qtiril-utils.so
@@ -4136,7 +4018,6 @@ vendor/lib64/soundfx/libbundleaidl.so
 vendor/lib64/soundfx/libdlbvolaidl.so
 vendor/lib64/soundfx/libdownmixaidl.so
 vendor/lib64/soundfx/libdynamicsprocessingaidl.so
-vendor/lib64/soundfx/libhapticgenerator.so
 vendor/lib64/soundfx/libloudnessenhanceraidl.so
 vendor/lib64/soundfx/libquasar.so
 vendor/lib64/soundfx/libreverbaidl.so
@@ -4165,7 +4046,6 @@ vendor/lib64/vendor.qti.hardware.qasr-V2-ndk.so
 vendor/lib64/vendor.qti.hardware.qconfig-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.qseecom-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
-vendor/lib64/vendor.qti.hardware.qspa-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.secureprocessor.common-helper.so
 vendor/lib64/vendor.qti.hardware.secureprocessor.common-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.secureprocessor.config-V1-ndk.so

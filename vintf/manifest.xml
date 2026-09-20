@@ -45,10 +45,6 @@
     </hal>
     <hal format="aidl">
         <name>android.hardware.drm</name>
-        <fqname>IDrmFactory/clearkey</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>android.hardware.drm</name>
         <version>1</version>
         <fqname>IDrmFactory/wfdhdcp</fqname>
     </hal>
@@ -56,11 +52,6 @@
         <name>android.hardware.gnss</name>
         <version>4</version>
         <fqname>IGnss/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>android.hardware.health</name>
-        <version>3</version>
-        <fqname>IHealth/default</fqname>
     </hal>
     <hal format="aidl">
         <name>android.hardware.radio.config</name>
@@ -137,20 +128,6 @@
         <fqname>ISensors/default</fqname>
     </hal>
     <hal format="aidl">
-        <name>android.hardware.thermal</name>
-        <version>2</version>
-        <fqname>IThermal/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>android.hardware.usb</name>
-        <fqname>IUsb/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>android.hardware.wifi</name>
-        <version>2</version>
-        <fqname>IWifi/default</fqname>
-    </hal>
-    <hal format="aidl">
         <name>android.hardware.wifi.hostapd</name>
         <version>2</version>
         <fqname>IHostapd/default</fqname>
@@ -178,21 +155,12 @@
         <fqname>IBluetoothFinder/default</fqname>
     </hal>
     <hal format="aidl">
-        <name>android.hardware.bluetooth.audio</name>
-        <version>4</version>
-        <fqname>IBluetoothAudioProviderFactory/default</fqname>
-    </hal>
-    <hal format="aidl">
         <name>android.hardware.bluetooth</name>
         <fqname>IBluetoothHci/default</fqname>
     </hal>
     <hal format="aidl">
         <name>vendor.qti.hardware.bluetooth_sar</name>
         <fqname>IBluetoothSar/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>android.hardware.boot</name>
-        <fqname>IBootControl/default</fqname>
     </hal>
     <hal format="aidl">
         <name>android.hardware.bluetooth.lmp_event</name>
@@ -599,11 +567,6 @@
         <fqname>IOffload/default</fqname>
     </hal>
     <hal format="aidl">
-        <name>android.hardware.vibrator</name>
-        <version>2</version>
-        <fqname>IVibrator/default</fqname>
-    </hal>
-    <hal format="aidl">
         <name>vendor.qti.hardware.vpp</name>
         <fqname>IVppService/default</fqname>
     </hal>
@@ -634,10 +597,6 @@
     <hal format="aidl">
         <name>vendor.qti.qccvndhal_aidl</name>
         <fqname>IQccvndhal/qccvndhal</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>vendor.qti.hardware.qspa</name>
-        <fqname>IQspa/default</fqname>
     </hal>
     <hal format="aidl">
         <name>vendor.qti.qspmhal</name>
